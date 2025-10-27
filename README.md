@@ -5,7 +5,7 @@
 ### Objetivos que o projeto pretende alcançar
 
 * Catalogar quais variáveis são importantes para a modelagem da previsão de notas.
-* Análisar quais são os filmes mais populares e aqueles com melhor avaliação e se existe algum padrão que os estúdios podem seguir para produzir um filme lucrativo ou bem avaliado.
+* Analisar quais são os filmes mais populares e aqueles com melhor avaliação e se existe algum padrão que os estúdios podem seguir para produzir um filme lucrativo ou bem avaliado.
 
 
 ### Como instalar o projeto
@@ -31,7 +31,7 @@ Além do dataset indicado também foram adicionados dados externos encontrados n
 * [60,000+ Movies, 100+ Years of Data, Rich Metadata](https://www.kaggle.com/datasets/raedaddala/top-500-600-movies-of-each-year-from-1960-to-2024?utm_source=chatgpt.com) foi utilizado para as classificações etárias que estavam faltando no dataset.
 * [Box Office Data (1984 to 2024) from BoxOfficeMojo](https://www.kaggle.com/datasets/harios/box-office-data-1984-to-2024-from-boxofficemojo?utm_source=chatgpt.com) auxiliou em relação as informações de bilheteria que estavam faltando para alguns filmes.
 
-Deve-se enfatizar que mesmo com a adição dos 3 datasets citados, alguns filmes continuaram possuindo valores ausentes, por isso em algumas operações realizadas durante a análise esses filmes tiveram que ser descartados para não afetar a análise. No entanto, tem-se como tarefa para o futuro mapear essas informações ausentes e verificar se elas podem ser substituidas por valores reais ou se realmente são informações totalmente indisponíveis.
+Deve-se enfatizar que mesmo com a adição dos 3 datasets citados, alguns filmes continuaram possuindo valores ausentes, por isso em algumas operações realizadas durante a análise esses filmes tiveram que ser descartados para não afetar a análise. No entanto, tem-se como tarefa para o futuro mapear essas informações ausentes e verificar se elas podem ser substituídas por valores reais ou se realmente são informações totalmente indisponíveis.
 
 
 Outro detalhe importante sobre os datasets, é que apenas o principal, que foi o indicado para o projeto, recebeu um tratamento de dados mais profundo, com limpeza (foram verificados os valores nulos e duplicados) e engenharia de atributos (criação de novos atributos derivados de outros já existentes e tratamento de dados ausentes). Essa escolha foi motivada por questões referentes a limitação de tempo, por essa razão também indica-se como atividade futura a aplicação de operações de tratamento de dados nos 3 datasets externos.
@@ -44,7 +44,7 @@ O projeto apresentou uma metodologia linear que se preocupou em inicialmente tra
 Abaixo tem-se mais detalhadamente o processo de construção de cada etapa:
 
 1. Tratamento dos dados
-> Essa etapa investigou os valores nulos e duplicados em cada coluna. Após a identificação de quais elementos possuiam esses valores indesejados, alguns foram substituidos por valores corretos encontrados em outros datasets. Ademais, outra operação realizada durante essa etapa foi a conversão de tipos de dados para facilitar as operações de análise do projeto. Por fim, também foi instrumentalizado a criação de novos atributos derivados de outros, como as colunas "Genre 1", "Genre 2" e "Genre 3" que foram originadas da coluna "Genre", foi através dessa modificação que foi possível encontrar os gêneros mais populares na tabela e os menos populares.
+> Essa etapa investigou os valores nulos e duplicados em cada coluna. Após a identificação de quais elementos possuíam esses valores indesejados, alguns foram substituidos por valores corretos encontrados em outros datasets. Ademais, outra operação realizada durante essa etapa foi a conversão de tipos de dados para facilitar as operações de análise do projeto. Por fim, também foi instrumentalizado a criação de novos atributos derivados de outros, como as colunas "Genre 1", "Genre 2" e "Genre 3" que foram originadas da coluna "Genre", foi através dessa modificação que foi possível encontrar os gêneros mais populares na tabela e os menos populares.
 2. Análise inicial dos dados
 > A segunda etapa observou informações gerais e superficiais dos dados, através dessas informações algumas pontuações foram feitas, como por exemplo, o diretor que possui mais filmes no dataset é Alfred Hitchcock e o ator é Robert De Niro. Outras conclusões referentes ao filme mais antigo e filme com maior bilheteria também foram discutidas.
 3. Análise exploratória dos dados
