@@ -11,7 +11,7 @@
 ### Como instalar o projeto
 Cabe destacar antes de tudo que o projeto foi construído no vscode, então recomenda-se que o leitor também utilize ele.
 1. Clonar o repositório para sua máquina local
-> git clone https://github.com/samylesousa/LH_CD_SAMYLE.git
+> git clone https://github.com/samylesousa/movies_imdb.git
 2. Acessar o diretório em que o código está localizado
 3. Criar um ambiente virtual
 > python -m venv env
